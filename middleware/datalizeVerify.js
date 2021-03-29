@@ -30,18 +30,8 @@ function datalizeVerify(){
             await next()
         } catch (error) {
             if (error instanceof datalize.Error) {
-                // ctx.status = 200;
-                // ctx.fail('参数错误',9998,error.errors)
-                // console.log('0-',error)
-                
-                ctx.response.status = 200;
-                // ctx.body = errdata(error.toJSON().errors,9998,'参数错误')
-                console.log(ctx.response)
-                console.log(error)
-                // console.log(ctx)
-                //ctx.fail('系统错误',500,error.message)
+                ctx.fail('参数错误',9998,error.errors)
             }
-            
         }
     }
 }

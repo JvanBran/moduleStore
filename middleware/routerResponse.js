@@ -1,6 +1,7 @@
-function routerResponse(option={}){
-    return function(ctx,next){
+ function routerResponse(option={}){
+    return async function(ctx,next){
         ctx.success = function (data) {
+            ctx.status = 200;
             ctx.type = option.type || 'json'
             ctx.body = {
                 code : option.successCode || 0,
@@ -8,15 +9,16 @@ function routerResponse(option={}){
                 result : data || {}
             }
         }
-        ctx.fail = function (msg,code) {
+        ctx.fail = function (msg,code,result) {
+            ctx.status = 200;
             ctx.type = option.type || 'json'
             ctx.body = {
                 code : code || option.failCode || 1,
                 message : msg || option.successMsg || 'fail',
-                result : option.err || {}
+                result : result || {}
             }
         }
-        next()
+        await next()
     }
 }
 module.exports= routerResponse
