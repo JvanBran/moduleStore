@@ -19,7 +19,7 @@ app.use(body({
 }))
 app.use(json({ limit: '50mb' }))
 app.use(routerResponse())
-app.use(datalizeVerify())
+
 app.use(require('koa-static')(__dirname + '/public'))
 // logger
 app.use(async (ctx, next) => {
@@ -32,6 +32,7 @@ app.use(async (ctx, next) => {
   }
   console.log(`form ${ip}  ${ctx.method} ${ctx.url} - ${ms}ms`)
 })
+app.use(datalizeVerify())
 // routes
 app.use(composeRouter(__dirname + '/controllers').routes());
 // error-handling
