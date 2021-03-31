@@ -20,9 +20,20 @@ app.use(body({
   maxFileSize:20 * 1024 * 1024, // 文件上传大小
 }))
 app.use(json({ limit: '50mb' }))
-
 app.use(routerResponse())
 app.use(jwtVerify())
+//JWT
+app.use(koajwt({
+  secret: process.env.JWT_TOKEN
+}).unless({
+  path: [
+    /^\/v1\/user\/register/,
+    /^\/v1\/user\/login/,
+    /^\/public/,
+    //TODO 控制请求类型
+    // { url:'/v1/user/register', methods: ['POST']}
+  ]
+}))
 app.use(require('koa-static')(__dirname + '/public'))
 app.use(datalizeVerify())
 // logger
@@ -37,12 +48,7 @@ app.use(async (ctx, next) => {
   console.log(`form ${ip}  ${ctx.method} ${ctx.url} - ${ms}ms`)
 })
 // routes
-app.use(composeRouter(__dirname + '/controllers').routes());
-//JWT
-app.use(koajwt({
-  secret: process.env.JWT_TOKEN
-}))
-// .unless({path: [''] })
+app.use(composeRouter(__dirname + '/api').routes());
 // error-handling
 app.on('error', (err, ctx) => {
   console.error('server error', err, ctx)

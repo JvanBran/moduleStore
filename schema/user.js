@@ -6,44 +6,26 @@ module.exports = function (sequelize, DataTypes) {
             primaryKey: true,
             autoIncrement: true
         },
-        version:{
+        name:{
             type: DataTypes.STRING(255),
-            field: 'version',
-            allowNull: true,
-            comment: '系统版本'
+            field: 'name',
+            allowNull: false,
+            comment: '用户名称'
         },
-        category:{
-            type: DataTypes.TEXT,
-            field: 'category',
-            allowNull: true,
-            comment: '错误枚举'
+        password: {
+            type: DataTypes.STRING(255),
+            field: 'password',
+            allowNull: false,
+            comment: '用户密码'
         },
-        logType:{
+        phone:{
             type: DataTypes.TEXT('tiny'),
-            field: 'logType',
+            field: 'phone',
             allowNull: true,
-            comment: '日志类型'
-        },
-        url:{
-            type: DataTypes.TEXT,
-            field: 'url',
-            allowNull: true,
-            comment: '请求地址'
-        },
-        post:{
-            type: DataTypes.TEXT,
-            field: 'post',
-            allowNull: true,
-            comment: '请求参数'
-        },
-        path:{
-            type: DataTypes.TEXT,
-            field: 'path',
-            allowNull: true,
-            comment: '错误页面地址'
+            comment: '手机号码'
         },
     }, {
         freezeTableName: true,
-        comment: "用户信息表",
+        comment: "用户表",
     })
 }
