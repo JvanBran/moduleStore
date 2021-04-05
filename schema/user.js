@@ -1,6 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
     return sequelize.define('userInfo', {
-        id: {
+        userid: {
             type: DataTypes.INTEGER.UNSIGNED,
             allowNull: false,
             primaryKey: true,
@@ -24,8 +24,40 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: true,
             comment: '手机号码'
         },
+        question:{
+            type: DataTypes.STRING(255),
+            field: 'question',
+            allowNull: true,
+            comment: '找回密码问题',
+            defaultValue:''
+        },
+        answer:{
+            type: DataTypes.STRING(255),
+            field: 'answer',
+            allowNull: true,
+            comment: '找回密码答案',
+            defaultValue:''
+        },
+        role:{
+            type: DataTypes.INTEGER(4),
+            field: 'role',
+            allowNull: true,
+            comment: '角色0-管理员,1-普通用户',
+            defaultValue:1
+        },
+        createdAt: {
+            type: DataTypes.DATE,
+            field: 'creat_time',
+        },
+        updatedAt: {
+            type: DataTypes.DATE,
+            field: 'updat_time'
+        }
     }, {
         freezeTableName: true,
-        comment: "用户表",
+        timestamps: true,
+        createdAt:'creat_time',
+        updatedAt:'updat_time',
+        comment: "用户表"
     })
 }

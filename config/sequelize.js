@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+const logUtil = require('../util/logUtil')
 const moduleStore = new Sequelize(process.env.DB_NAME,process.env.DB_USER,process.env.DB_PASSWORD,{
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
@@ -21,7 +22,9 @@ const moduleStore = new Sequelize(process.env.DB_NAME,process.env.DB_USER,proces
 });
 function log(e){
     //响应开始时间
-    console.log('===',e)
+    const ms = new Date()
+    console.log(e)
+    logUtil.logSqlponse(e, ms);
 }
 module.exports = {
     moduleStore

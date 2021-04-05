@@ -11,10 +11,13 @@ const composeRouter = require('./middleware/composeRouter')
 const datalizeVerify = require('./middleware/datalizeVerify')
 //JWT
 const jwtVerify = require('./middleware/jwtVerify')
+//日志
+const loggers = require('./middleware/loggers')
 //环境变量
 let dotenv =  require('dotenv');
 dotenv.config('./env');
 // middlewares
+app.use(loggers());// 本地log
 app.use(body({
   keepExtensions: true,    // 保持文件的后缀
   maxFileSize:20 * 1024 * 1024, // 文件上传大小
