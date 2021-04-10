@@ -3,6 +3,10 @@ const app = new Koa()
 const json = require('koa-json')
 const body = require('koa-body')
 const koajwt = require('koa-jwt')
+//获取当前ip及hostName
+const {getLocalIP} = require('./util/lib')
+global.localIP = getLocalIP().ip
+global.localHostName = getLocalIP().hostName
 //返回值封装
 const routerResponse = require('./middleware/routerResponse')
 //根据目录构建路由结构
@@ -14,8 +18,13 @@ const jwtVerify = require('./middleware/jwtVerify')
 //日志
 const loggers = require('./middleware/loggers')
 //环境变量
-let dotenv =  require('dotenv');
-dotenv.config('./env');
+if(process.env.NODE_ENV == 'development'){
+  const dotenv =  require('dotenv');
+  dotenv.config('../env');
+}
+//nacos
+const nacos = require('./config/nacos')
+nacos()
 // middlewares
 app.use(loggers());// 本地log
 app.use(body({
@@ -33,8 +42,8 @@ app.use(koajwt({
     /^\/v1\/user\/register/,
     /^\/v1\/user\/login/,
     /^\/public/,
-    //TODO 控制请求类型
-    // { url:'/v1/user/register', methods: ['POST']}
+    /^\/v1\/module\/rabbitmq\/send/,
+    /^\/v1\/module\/socket\/send/,
   ]
 }))
 app.use(require('koa-static')(__dirname + '/public'))

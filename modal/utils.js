@@ -36,6 +36,7 @@ class sqlClass{
         })
     }
     async findAll(){
+        const self = this;
         return new Promise((resolve, reject) => {
             self.sqlModel.findAll().then(res => {
               resolve(res)

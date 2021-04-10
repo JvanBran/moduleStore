@@ -1,0 +1,1280 @@
+[2021-04-10T20:10:13.731] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:10:13 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:10:13.885] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:10:13 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:10:45.846] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:10:45 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:10:45.874] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:10:45 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:11:02.025] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:11:02 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:11:02.059] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:11:02 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:11:12.090] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:11:12 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:11:12.108] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:11:12 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:11:54.879] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:11:54 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:11:54.894] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:11:54 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:12:01.222] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:12:01 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:12:01.228] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:12:01 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:12:11.306] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:12:11 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:12:11.321] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:12:11 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:12:17.039] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:12:17 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:12:17.082] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:12:17 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:14:08.403] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:14:08 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:14:08.429] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:14:08 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:14:30.936] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:14:30 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:14:30.973] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:14:30 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:15:16.529] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:15:16 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:15:16.554] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:15:16 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:15:39.664] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:15:39 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:15:39.691] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:15:39 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:16:27.115] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:16:27 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:16:27.144] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:16:27 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:16:51.890] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:16:51 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:16:51.908] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:16:51 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:17:02.994] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:02 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:17:03.002] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:03 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:17:11.460] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:11 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:17:11.556] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:11 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:17:23.026] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:23 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:17:23.039] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:23 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:17:31.464] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:31 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:17:31.476] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:31 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:17:36.928] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:36 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:17:36.937] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:36 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:17:47.337] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:47 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:17:47.356] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:47 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:17:52.086] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:52 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:17:52.093] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:52 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:17:55.417] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:55 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:17:55.423] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:17:55 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:18:35.890] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:18:35 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:18:35.919] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:18:35 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:19:04.777] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:19:04 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:19:04.785] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:19:04 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:19:14.789] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:19:14 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:19:14.795] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:19:14 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:19:37.468] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:19:37 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:19:37.474] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:19:37 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:20:29.029] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:20:29 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:20:29.041] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:20:29 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:20:32.463] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:20:32 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:20:32.574] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:20:32 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:20:45.496] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:20:45 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:20:45.503] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:20:45 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:21:05.376] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:21:05 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:21:05.384] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:21:05 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:21:16.629] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:21:16 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:21:16.641] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:21:16 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:21:42.011] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:21:41 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:21:42.047] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:21:42 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:21:43.194] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:21:43 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:21:43.201] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:21:43 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:22:04.040] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:22:04 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:22:04.049] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:22:04 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:22:19.013] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:22:19 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:22:19.034] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:22:19 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:22:35.293] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:22:35 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:22:35.301] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:22:35 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:22:46.959] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:22:46 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:22:46.966] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:22:46 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:22:56.025] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:22:56 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:22:56.033] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:22:56 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:23:09.227] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:09 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:23:09.235] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:09 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:23:15.540] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:15 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:23:15.568] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:15 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:23:31.906] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:31 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:23:31.933] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:31 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:23:45.147] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:45 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:23:45.156] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:45 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:23:49.432] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:49 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:23:49.467] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:49 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:23:56.168] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:56 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:23:56.180] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:56 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:23:57.583] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:57 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:23:57.592] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:23:57 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:24:09.795] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:24:09 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:24:09.802] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:24:09 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:24:30.950] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:24:30 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:24:31.002] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:24:31 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:24:54.306] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:24:54 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:24:54.317] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:24:54 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:25:04.301] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:04 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:25:04.312] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:04 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:25:06.540] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:06 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:25:06.549] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:06 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:25:10.443] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:10 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:25:10.451] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:10 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:25:34.335] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:34 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:25:34.374] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:34 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:25:42.205] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:42 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:25:42.212] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:42 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:25:51.625] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:51 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:25:51.633] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:25:51 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:26:01.516] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:26:01 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:26:01.547] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:26:01 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:26:04.441] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:26:04 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:26:04.446] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:26:04 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:26:14.940] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:26:14 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:26:14.949] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:26:14 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:26:16.322] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:26:16 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:26:16.333] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:26:16 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:27:28.880] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:27:28 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:27:28.919] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:27:28 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:27:41.342] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:27:41 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:27:41.545] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:27:41 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:27:51.434] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:27:51 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:27:51.439] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:27:51 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:27:53.849] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:27:53 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:27:53.866] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:27:53 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:28:56.906] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:28:56 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:28:56.973] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:28:56 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:28:58.164] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:28:58 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:28:58.170] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:28:58 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:29:18.528] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:29:18 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:29:18.533] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:29:18 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:29:54.786] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:29:54 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:29:54.804] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:29:54 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:30:01.191] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:30:01 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:30:01.209] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:30:01 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:30:09.618] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:30:09 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:30:09.624] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:30:09 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:30:16.901] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:30:16 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:30:16.907] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:30:16 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:30:26.105] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:30:26 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:30:26.112] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:30:26 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:31:03.300] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:03 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:31:03.309] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:03 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:31:10.016] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:10 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:31:10.036] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:10 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:31:15.076] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:15 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:31:15.083] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:15 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:31:20.011] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:20 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:31:20.016] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:20 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:31:26.076] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:26 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:31:26.088] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:26 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:31:32.927] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:32 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:31:32.933] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:32 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:31:35.305] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:35 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:31:35.319] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:35 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:31:45.862] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:45 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:31:45.872] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:31:45 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:32:38.482] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:32:38 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:32:38.493] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:32:38 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:34:16.129] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:34:16 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:34:16.145] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:34:16 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:34:35.698] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:34:35 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:34:35.713] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:34:35 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:34:54.236] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:34:54 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:34:54.270] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:34:54 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:35:59.955] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:35:59 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:35:59.972] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:35:59 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:36:04.536] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:36:04 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:36:04.543] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:36:04 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:36:22.816] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:36:22 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:36:22.821] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:36:22 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:36:25.454] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:36:25 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:36:25.463] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:36:25 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:36:34.118] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:36:34 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:36:34.127] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:36:34 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:37:03.872] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:37:03 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:37:03.881] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:37:03 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:37:10.700] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:37:10 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:37:10.734] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:37:10 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:39:49.272] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:39:49 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:39:49.279] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:39:49 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:39:51.686] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:39:51 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:39:51.698] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:39:51 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:40:37.037] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:40:37 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:40:37.074] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:40:37 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:40:48.018] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:40:48 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:40:48.028] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:40:48 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:40:51.235] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:40:51 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:40:51.242] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:40:51 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:41:20.026] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:41:20 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:41:20.040] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:41:20 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:41:35.312] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:41:35 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:41:35.324] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:41:35 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:42:00.260] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:42:00 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:42:00.275] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:42:00 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:42:03.673] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:42:03 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:42:03.682] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:42:03 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:42:34.032] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:42:34 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:42:34.040] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:42:34 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:42:46.777] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:42:46 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:42:46.789] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:42:46 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:43:10.245] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:43:10 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:43:10.262] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:43:10 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:43:15.899] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:43:15 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:43:15.930] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:43:15 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:43:28.521] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:43:28 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:43:28.561] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:43:28 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:43:49.010] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:43:49 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:43:49.026] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:43:49 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:45:01.430] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:45:01 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:45:01.450] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:45:01 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:45:34.418] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:45:34 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:45:34.463] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:45:34 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:45:50.593] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:45:50 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:45:50.619] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:45:50 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:46:10.096] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:46:10 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:46:10.111] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:46:10 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:46:27.854] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:46:27 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:46:27.903] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:46:27 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:46:55.512] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:46:55 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:46:55.523] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:46:55 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:47:56.367] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:47:56 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:47:56.387] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:47:56 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:48:29.831] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:48:29 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:48:29.836] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:48:29 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:49:53.873] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:49:53 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:49:53.893] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:49:53 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:50:32.084] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:50:32 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:50:32.093] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:50:32 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:50:35.172] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:50:35 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:50:35.178] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:50:35 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:50:40.543] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:50:40 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:50:40.552] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:50:40 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:50:57.479] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:50:57 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:50:57.512] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:50:57 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:51:08.753] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:51:08 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:51:08.772] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:51:08 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:51:12.366] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:51:12 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:51:12.371] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:51:12 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:53:05.012] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:53:05 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:53:05.019] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:53:05 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:53:08.882] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:53:08 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:53:08.893] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:53:08 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:53:16.976] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:53:16 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:53:16.985] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:53:16 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:55:07.920] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:55:07 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:55:07.948] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:55:07 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:55:42.050] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:55:42 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:55:42.078] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:55:42 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:58:46.013] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:58:46 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:58:46.021] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:58:46 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:58:51.143] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:58:51 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:58:51.151] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:58:51 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:59:46.068] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:59:46 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:59:46.119] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:59:46 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+
+[2021-04-10T20:59:56.469] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:59:56 GMT+0800 (中国标准时间)Executing (default): CREATE TABLE IF NOT EXISTS `userInfo` (`userid` INTEGER UNSIGNED NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL COMMENT '用户名称', `password` VARCHAR(255) NOT NULL COMMENT '用户密码', `phone` TINYTEXT COMMENT '手机号码', `question` VARCHAR(255) DEFAULT '' COMMENT '找回密码问题', `answer` VARCHAR(255) DEFAULT '' COMMENT '找回密码答案', `role` INTEGER(4) DEFAULT 1 COMMENT '角色0-管理员,1-普通用户', `creat_time` DATETIME NOT NULL, `updat_time` DATETIME NOT NULL, PRIMARY KEY (`userid`)) ENGINE=InnoDB COMMENT '用户表';
+*************** sql log end ***************
+
+[2021-04-10T20:59:56.474] [INFO] sqlponse - 
+*************** sql log start ***************
+Sat Apr 10 2021 20:59:56 GMT+0800 (中国标准时间)Executing (default): SHOW INDEX FROM `userInfo`
+*************** sql log end ***************
+

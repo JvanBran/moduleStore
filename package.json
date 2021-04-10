@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "start": "node bin/www",
-    "dev": "./node_modules/.bin/nodemon bin/www",
+    "dev": "cross-env NODE_ENV=development ./node_modules/.bin/nodemon bin/www",
     "prd": "pm2 start bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "amqplib": "^0.7.1",
+    "cross-env": "^7.0.3",
     "datalize": "0.3.4",
     "debug": "4.1.1",
     "dotenv": "8.2.0",
@@ -22,8 +24,9 @@
     "koa-static": "5.0.0",
     "log4js": "^6.3.0",
     "mysql2": "2.2.5",
+    "nacos": "^2.1.0",
     "sequelize": "5.21.10",
-    "socket.io": "2.3.0"
+    "socket.io": "2.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"

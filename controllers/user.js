@@ -7,7 +7,13 @@ const { redisStore } = require('../config/redis');
 module.exports = {
     createUser : async (ctx, next) => {
         const reqBody = ctx.request.body;
-        await userInfoModel.create(reqBody)
-        ctx.success('创建成功！')
+        const UserinfoPhone = await userInfoModel.findAndCountAll({phone:reqBody.phone})
+        console.log(UserinfoPhone.count)
+        if(UserinfoPhone.count){
+            ctx.fail('手机号码已存在！',499,{})
+        }else{
+            await userInfoModel.create(reqBody)
+            ctx.success('创建成功！')
+        }
     }
 }

@@ -8,6 +8,7 @@ var app = require('../app');
 var debug = require('debug')('demo:server');
 var http = require('http');
 var Socket = require('../socket');
+const { rabbitMq } = require('../config/rabbitmq');
 /**
  * Get port from environment and store in Express.
  */
@@ -27,6 +28,14 @@ var server = http.createServer(app.callback());
  * Listen on provided port, on all network interfaces.
  */
 
+/**
+ * RabbitMq 消费者
+ */
+const connects = async() => {
+  const JvanInfo = await rabbitMq.receiveQueueMsg('Jvan')
+  console.log('=======',JvanInfo)
+}
+connects()
 
 server.listen(port);
 server.on('error', onError);
