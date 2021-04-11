@@ -1,5 +1,5 @@
 let log4js = require('log4js');
-let logConfig = require('../config/logConfig');
+let logConfig = require('../service/logConfig');
 
 //加载配置文件
 log4js.configure(logConfig);

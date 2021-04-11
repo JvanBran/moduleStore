@@ -23,7 +23,7 @@ if(process.env.NODE_ENV == 'development'){
   dotenv.config('../env');
 }
 //nacos
-const nacos = require('./config/nacos')
+const nacos = require('./service/nacos')
 nacos()
 // middlewares
 app.use(loggers());// 本地log

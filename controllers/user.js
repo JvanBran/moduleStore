@@ -1,5 +1,5 @@
 const { userInfoModel } = require('../modal/user');
-const { redisStore } = require('../config/redis');
+const { redisStore } = require('../service/redis');
 // const token = jwt.sign({
 //     redis_id: new Date().getTime()
 // }, process.env.JWT_TOKEN, { expiresIn: '24h' });
