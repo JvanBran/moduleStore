@@ -1,6 +1,6 @@
 module.exports = {
     sendMsg : async (ctx, next) => {
-        global.socketload.emit('formctx',{msg:'90990909'})
-        ctx.success('222')
+        global.socketload.emit(ctx.request.body.queueName,{msg:ctx.request.body.msg})
+        ctx.success('发送成功!')
     }
 }

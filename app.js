@@ -22,9 +22,17 @@ if(process.env.NODE_ENV == 'development'){
   const dotenv =  require('dotenv');
   dotenv.config('../env');
 }
+//Service
 //nacos
 const nacos = require('./service/nacos')
 nacos()
+//RabbitMq
+const { rabbitMq } = require('./service/rabbitmq');
+(async() => {
+  const JvanInfo = await rabbitMq.receiveQueueMsg('Jvan')
+  console.log('=======',JvanInfo)
+  global.socketload.emit(ctx.request.body.queueName,{msg:ctx.request.body.msg})
+})()
 // middlewares
 app.use(loggers());// 本地log
 app.use(body({
