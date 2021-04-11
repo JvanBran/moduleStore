@@ -40,15 +40,13 @@ class RabbitMq{
                 await rabbitChannel.consume(queueName,(msg)=>{
                     if (msg !== null) {
                         let data = msg.content.toString();
-                        console.log(data)
                         rabbitChannel.ack(msg);
                         resolve(data)
                     }
                 },{noAck: false})
             } catch (error) {
                 console.log(error)
-            }
-            
+            } 
         })
     }
 }
