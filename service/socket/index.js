@@ -1,6 +1,5 @@
 const IO = require('socket.io')
 function creatSocket(app) {
-  
   /**
    * socketload
    * 监控后台服务

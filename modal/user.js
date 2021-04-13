@@ -1,7 +1,7 @@
 const db = require('../service/sequelize');
 const { sqlClass } = require('./utils');
 const Sequelize = db.moduleStore
-const UserInfo = Sequelize.import('../schema/user')
+const UserInfo = Sequelize.import('../schema/userInfo')
 // 标准同步
 // 只有当数据库中不存在与模型同名的数据表时，才会同步
 UserInfo.sync()
