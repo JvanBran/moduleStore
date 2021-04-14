@@ -1,7 +1,7 @@
 const db = require('../service/sequelize');
 const { sqlClass } = require('./utils');
 const Sequelize = db.moduleStore
-const UserInfo = Sequelize.import('../schema/userInfo')
+const PackageCategory = Sequelize.import('../schema/packagecategory')
 // 标准同步
 // 只有当数据库中不存在与模型同名的数据表时，才会同步
 UserInfo.sync()
@@ -11,15 +11,15 @@ UserInfo.sync()
 // 强制同步
 // 删除同名数据表后同步，谨慎使用，会导致数据丢失
 // UserInfo.sync({force: true})
-class UserInfoModel extends sqlClass{
+class PackageCategoryModel extends sqlClass{
     constructor(){
         super()
-        this.sqlModel = UserInfo;
+        this.sqlModel = PackageCategory;
         this.dataType = {
         }
     }
 }
-let userInfoModel = new UserInfoModel()
+let packageCategory = new PackageCategoryModel()
 module.exports = {
-    userInfoModel:userInfoModel
+    packageCategory:packageCategory
 }

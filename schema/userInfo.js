@@ -28,15 +28,13 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.TEXT('long'),
             field: 'question',
             allowNull: true,
-            comment: '找回密码问题',
-            defaultValue:''
+            comment: '找回密码问题'
         },
         answer:{
             type: DataTypes.TEXT('long'),
             field: 'answer',
             allowNull: true,
-            comment: '找回密码答案',
-            defaultValue:''
+            comment: '找回密码答案'
         },
         role:{
             type: DataTypes.INTEGER(4),

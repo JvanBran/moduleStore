@@ -1,4 +1,4 @@
-const { userInfoModel } = require('../modal/user');
+const { userInfoModel } = require('../modal/userInfo');
 const { redisStore } = require('../service/redis');
 // const token = jwt.sign({
 //     redis_id: new Date().getTime()
