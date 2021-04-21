@@ -1,0 +1,1 @@
+docker build -t iottepa-basic-pm2:latest .

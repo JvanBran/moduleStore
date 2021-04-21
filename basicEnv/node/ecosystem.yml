@@ -1,0 +1,39 @@
+apps:
+    - script   : './bin/www'
+      args    : ['env']
+      cwd    : './ModuleStoreServer'
+      name     : 'ModuleStoreServer'
+      instances: 1
+      exec_mode: cluster
+      env: 
+        DB_HOST: mysql
+        DB_NAME: moduleStore
+        DB_PORT: 3306
+        DB_USER: root
+        DB_PASSWORD: 123456
+        DB_UNSECURE: true
+        RD_HOST: redis
+        RD_PORT: 6379
+        RD_FAMILY: 4
+        RD_PASSWORD: 
+        RD_DB: 0
+        APP_PORT: 19314
+        JWT_TOKEN: moduleStore
+        NACOS_IP: nacos:8848
+        NACOS_NAME_SPACE: public
+        NACOS_SERVICE_NAME: fzgang-module-store-server
+        NACOS_GROUP_NAME: DEFAULT_GROUP
+        RABBITMQ_HOSTNAME: rabbitmq
+        RABBITMQ_PORT: 5672
+        RABBITMQ_USERNAME: admin
+        RABBITMQ_PASSWORD: admin
+        RABBITMQ_PROTOCOL: amqp
+        RABBITMQ_LOCALE: zh-CN
+        RABBITMQ_FRAMEMAX: 0
+        RABBITMQ_HEARTBEAT: 0
+        RABBITMQ_VHOST: /
+      log_date_format: "YYYY-MM-DD HH:mm Z"
+      error_file: "/var/log/pm2/ModuleStoreServer/app-err.log"
+      out_file: "/var/log/pm2/ModuleStoreServer/app-out.log"
+      combine_logs: false
+      ignore_watch: ["node_modules","logs"]

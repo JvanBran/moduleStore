@@ -1,0 +1,209 @@
+version: '3'
+services:
+    mysql:
+        image: mysql:5.7
+        user: root
+        container_name: mysql
+        restart: always
+        networks:
+            feproject-base:
+                aliases:
+                    - database
+            feproject-net:
+                aliases:
+                    - mysql
+        logging:
+            driver: "json-file"
+            options:
+                max-size: 1G
+                max-file: "2"
+        environment:
+            - SET_CONTAINER_TIMEZONE=true # 处理时区问题
+            - CONTAINER_TIMEZONE=Asia/Shanghai # 处理时区问题
+            - MYSQL_ROOT_PASSWORD=123456
+        ports: 
+            - 19306:3306
+        volumes:
+            - /etc/localtime:/etc/localtime:ro # 处理时区问题
+            - /feproject/mysql/data:/var/lib/mysql:rw # 数据挂载
+            - /feproject/mysql/config:/etc/mysql/conf.d:rw # 配置文件挂载
+            - /feproject/mysql/logs:/var/log/mysql:rw # 日志
+    nacos:
+        image: nacos/nacos-server:2.0.0
+        container_name: nacos
+        user: root
+        restart: always
+        networks:
+            feproject-base:
+                aliases:
+                    - nacos
+            feproject-net:
+                aliases:
+                    - nacos
+        logging:
+            driver: "json-file"
+            options:
+                max-size: 1G
+                max-file: "2"
+        ports: 
+            - 19307:8848
+        environment:
+            - SET_CONTAINER_TIMEZONE=true # 处理时区问题
+            - TZ=Asia/Shanghai # 处理时区问题
+            - TIME_ZONE=Asia/Shanghai
+            - MYSQL_SERVICE_DB_PARAM=characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+            - SPRING_DATASOURCE_PLATFORM=mysql
+            - MODE=standalone
+            - PREFER_HOST_MODE=hostname
+            - NACOS_USER=nacos
+            - MYSQL_SERVICE_HOST=database
+            - MYSQL_SERVICE_PORT=3306
+            - MYSQL_SERVICE_USER=root
+            - MYSQL_SERVICE_PASSWORD=123456
+            - MYSQL_SERVICE_DB_NAME=nacos_config
+            - NACOS_APPLICATION_PORT=8848
+            - MYSQL_DATABASE_NUM=1
+        entrypoint: bin/wait-for-it.sh database:3306 -t 0 -- bin/docker-startup.sh
+        volumes:
+            - /etc/localtime:/etc/localtime:ro # 处理时区问题
+            - /feproject/nacos/logs:/home/nacos/logs:rw # 日志挂载
+            - /feproject/wait-for-it.sh:/home/nacos/bin/wait-for-it.sh:rw
+    rabbitmq:
+        image: rabbitmq:3-management
+        container_name: rabbitmq
+        user: root
+        restart: always
+        networks:
+            feproject-base:
+                aliases:
+                    - rabbitmq
+            feproject-net:
+                aliases:
+                    - rabbitmq
+        logging:
+            driver: "json-file"
+            options:
+                max-size: 1G
+                max-file: "2"
+        ports: 
+            - 19308:15672
+        environment:
+            - SET_CONTAINER_TIMEZONE=true # 处理时区问题
+            - TZ=Asia/Shanghai # 处理时区问题
+            - TIME_ZONE=Asia/Shanghai
+            - RABBITMQ_DEFAULT_PASS=admin
+            - RABBITMQ_DEFAULT_USER=admin
+        volumes:
+            - /etc/localtime:/etc/localtime:ro # 处理时区问题
+            - /feproject/rabbitmq/data:/var/lib/rabbitmq:rw #数据挂载
+            - /feproject/rabbitmq/logs:/var/log/rabbitmq # 日志挂载
+    gitlab:
+        image: twang2218/gitlab-ce-zh:latest
+        container_name: gitlab
+        user: root
+        restart: always
+        networks:
+            feproject-base:
+                aliases:
+                    - gitlab
+            feproject-net:
+                aliases:
+                    - gitlab
+        logging:
+            driver: "json-file"
+            options:
+                max-size: 1G
+                max-file: "2"
+        ports: 
+            - "19310:22"
+            - "19311:443"
+            - "19312:80"
+        environment:
+            - SET_CONTAINER_TIMEZONE=true # 处理时区问题
+            - TZ=Asia/Shanghai # 处理时区问题
+            - TIME_ZONE=Asia/Shanghai
+        volumes:
+            - /etc/localtime:/etc/localtime:ro # 处理时区问题
+            - /feproject/gitlab/data:/var/opt/gitlab:rw #数据挂载
+            - /feproject/gitlab/logs:/var/logs/gitlab:rw # 日志挂载
+            - /feproject/gitlab/config:/etc/gitlab:rw # 配置文件
+    redis:
+        image: redis:latest
+        container_name: redis
+        user: root
+        restart: always
+        networks:
+            feproject-base:
+                aliases:
+                    - redis
+            feproject-net:
+                aliases:
+                    - redis
+        logging:
+            driver: "json-file"
+            options:
+                max-size: 1G
+                max-file: "2"
+        ports: 
+            - 19313:6379
+        volumes: 
+            - /feproject/redis/data:/data:rw #数据挂载
+            - /feproject/redis/logs:/data/redis/redis-log:rw # 日志挂载
+            - /feproject/redis/config:/usr/local/etc/redis:rw # 配置文件
+    nodeapp:
+        image: iottepa-basic-pm2:latest
+        container_name: nodeapp
+        user: root
+        restart: always
+        networks:
+            feproject-base:
+                aliases:
+                    - nodeapp
+            feproject-net:
+                aliases:
+                    - nodeapp
+        logging:
+            driver: "json-file"
+            options:
+                max-size: 1G
+                max-file: "2"
+        working_dir: /node
+        command:
+            - /bin/sh
+            - -c
+            - |
+                cd /node/ && /usr/local/bin/wait-for-it.sh mysql:3306 -t 0 -- pm2-docker start /home/ecosystem.yml
+        ports: 
+            - 19314:19314
+        volumes: 
+            - /feproject/node/nodeapp:/node:rw
+            - /mnt/download:/mnt/download:rw
+            - /feproject/node/ecosystem.yml:/home/ecosystem.yml:rw
+            - /feproject/node/logs:/log/pm2:rw
+            - /feproject/wait-for-it.sh:/usr/local/bin/wait-for-it.sh:rw
+    nginx:
+        image: nginx:1.18.0
+        user: root
+        restart: always
+        environment:
+            - TZ=Asia/Shanghai
+        container_name: nginx
+        networks:
+            feproject-base:
+                aliases:
+                    - nginx
+            feproject-net:
+                aliases:
+                    - nginx
+        ports:
+            - 19315:9443
+            - 80:80
+        volumes:
+            - /feproject/nginx/config/nginx.conf:/etc/nginx/nginx.conf:rw
+            - /feproject/nginx/config/conf.d:/etc/nginx/conf.d:rw
+            - /feproject/nginx/ssl:/etc/nginx/ssl:rw
+            - /feproject/nginx/html:/etc/nginx/html:rw
+            - /feproject/nginx/logs:/var/log/nginx:rw
+networks: 
+    feproject-base:
+    feproject-net:
