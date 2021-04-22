@@ -31,7 +31,7 @@ const { rabbitMq } = require('./service/rabbitmq');
 (async() => {
   const JvanInfo = await rabbitMq.receiveQueueMsg('Jvan')
   console.log('=======',JvanInfo)
-  global.socketload.emit(ctx.request.body.queueName,{msg:ctx.request.body.msg})
+  global.socketload.emit('Jvan',{msg:JvanInfo})
 })()
 // middlewares
 app.use(loggers());// 本地log

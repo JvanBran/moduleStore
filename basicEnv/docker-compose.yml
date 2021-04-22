@@ -87,6 +87,7 @@ services:
                 max-file: "2"
         ports: 
             - 19308:15672
+            - 19316:5672
         environment:
             - SET_CONTAINER_TIMEZONE=true # 处理时区问题
             - TZ=Asia/Shanghai # 处理时区问题
