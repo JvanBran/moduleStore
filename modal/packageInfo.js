@@ -4,7 +4,7 @@ const Sequelize = db.moduleStore
 const PackageInfo = Sequelize.import('../schema/packageInfo')
 // 标准同步
 // 只有当数据库中不存在与模型同名的数据表时，才会同步
-UserInfo.sync()
+PackageInfo.sync()
 // 动态同步
 // 修改同名数据表结构，以适用模型。
 // UserInfo.sync({alter: true})
@@ -19,7 +19,7 @@ class PackageInfoModel extends sqlClass{
         }
     }
 }
-let packageInfo = new PackageInfoModel()
+let packageInfoModel = new PackageInfoModel()
 module.exports = {
-    packageInfo:packageInfo
+    packageInfoModel:packageInfoModel
 }

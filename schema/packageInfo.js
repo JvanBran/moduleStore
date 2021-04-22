@@ -1,3 +1,4 @@
+const dayjs = require('dayjs');
 module.exports = function (sequelize, DataTypes) {
     return sequelize.define('store_package_info', {
         package_id: {
@@ -67,14 +68,28 @@ module.exports = function (sequelize, DataTypes) {
         createdAt: {
             type: DataTypes.DATE,
             field: 'creat_time',
+            get(){
+                return dayjs(this.getDataValue('creat_time')).valueOf();
+            },
+            set: function(val) {
+                return dayjs(this.getDataValue('creat_time').toISOString());
+            }
         },
         updatedAt: {
             type: DataTypes.DATE,
-            field: 'updat_time'
+            field: 'updat_time',
+            get(){
+                return dayjs(this.getDataValue('updat_time')).valueOf();
+            },
+            set: function(val) {
+                return dayjs(this.getDataValue('updat_time')).toISOString();
+            }
         }
     }, {
+        // 自定义表名
         freezeTableName: true,
-        timestamps: true,
+        // 是否需要增加createdAt、updatedAt、deletedAt字段
+        timestamps: false,
         createdAt:'creat_time',
         updatedAt:'updat_time',
         comment: "组件描述表"

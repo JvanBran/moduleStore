@@ -52,6 +52,7 @@ app.use(koajwt({
     /^\/public/,
     /^\/v1\/module\/rabbitmq\/send/,
     /^\/v1\/module\/socket\/send/,
+    /^\/v1\/public/,
   ]
 }))
 app.use(require('koa-static')(__dirname + '/public'))

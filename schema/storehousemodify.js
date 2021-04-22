@@ -34,7 +34,7 @@ module.exports = function (sequelize, DataTypes) {
         }
     }, {
         freezeTableName: true,
-        timestamps: true,
+        timestamps: false,
         createdAt:'creat_time',
         updatedAt:'updat_time',
         comment: "仓库修改记录"
