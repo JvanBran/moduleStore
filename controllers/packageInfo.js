@@ -1,14 +1,16 @@
 const { packageInfoModel } = require('../modal/packageInfo');
 const Op = require('sequelize').Op;
 module.exports = {
+    //获取组件列表
     packageList : async (ctx, next) => {
         let { pageNo, pageSize, package_name } = ctx.request.query
         let offset = (Number(pageNo) - 1) * Number(pageSize);
-        let packageNameFilter = package_name ? { package_name: { [Op.like]: `%${package_name}%` } } : {}
-        await packageInfo.findAndCountAll({
-            where: packageNameFilter,
+        let Filter = package_name ? { package_name: { [Op.like]: `%${package_name}%` } } : {}
+        await packageInfoModel.findAndCountAll({
+            where: Filter,
             //offet去掉前多少个数据
             offset,
+            attributes: ['id', 'name', 'role', 'open_id', 'describe'],
             //limit每页数据数量
             limit: Number(pageSize)
         }).then(res => {
@@ -20,6 +22,7 @@ module.exports = {
             })
         });
     },
+    //获取组件详情
     packageInfo : async (ctx, next) => {
         let { id } = ctx.request.query
         console.log(id)

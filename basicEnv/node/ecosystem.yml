@@ -32,6 +32,8 @@ apps:
         RABBITMQ_FRAMEMAX: 0
         RABBITMQ_HEARTBEAT: 0
         RABBITMQ_VHOST: /
+        GITLAB_HOST: gitlab
+        GITLAB_ROOT_TOKEN: Bg8k6CwgpqbTtWD_Y3ds
       log_date_format: "YYYY-MM-DD HH:mm Z"
       error_file: "/var/log/pm2/ModuleStoreServer/app-err.log"
       out_file: "/var/log/pm2/ModuleStoreServer/app-out.log"

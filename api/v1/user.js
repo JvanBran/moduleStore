@@ -1,5 +1,6 @@
 var router = require('koa-router')()
 const datalize = require('datalize');
+const { get } = require('../../service/axios')
 const field = datalize.field;
 const {createUser} = require('../../controllers/user')
 router
@@ -20,13 +21,17 @@ router
         ctx.fail('系统错误',500,error.message)
     }
 })
-.post('/register',datalize([
-    field('name').required(),
-    field('password').required(),
-    field('phone').required().phone()
-  ]),async (ctx, next)=>{ 
+.post('/register',async (ctx, next)=>{ 
+    // datalize([
+    //     field('name').required(),
+    //     field('password').required(),
+    //     field('phone').required().phone()
+    //   ]),
     try {
-        await createUser(ctx, next)
+        const {data} = await get('api/v4/users');
+        ctx.success({
+            data: data
+        })
     } catch (error) {
         ctx.fail('系统错误',500,error.message)
     }
