@@ -1,6 +1,5 @@
 var router = require('koa-router')()
 const datalize = require('datalize');
-const { get } = require('../../service/axios')
 const field = datalize.field;
 const {createUser} = require('../../controllers/user')
 router
@@ -28,9 +27,9 @@ router
     //     field('phone').required().phone()
     //   ]),
     try {
-        const {data} = await get('api/v4/users');
+        
         ctx.success({
-            data: data
+            data: ''
         })
     } catch (error) {
         ctx.fail('系统错误',500,error.message)

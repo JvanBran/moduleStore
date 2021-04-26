@@ -23,6 +23,9 @@ if(process.env.NODE_ENV == 'development'){
   dotenv.config('../env');
 }
 //Service
+// 代理端口
+// const proxyPort = require('./service/proxygitport')
+// proxyPort("8787","172.18.5.199","19312")
 //nacos
 const nacos = require('./service/nacos')
 nacos()
@@ -33,6 +36,10 @@ const { rabbitMq } = require('./service/rabbitmq');
   console.log('=======',JvanInfo)
   global.socketload.emit('Jvan',{msg:JvanInfo})
 })()
+// 定时任务订阅
+const scheduleCronstyle = require('./service/schedule/index')
+scheduleCronstyle()
+
 // middlewares
 app.use(loggers());// 本地log
 app.use(body({

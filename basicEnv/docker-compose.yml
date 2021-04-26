@@ -122,7 +122,7 @@ services:
         environment:
             - SET_CONTAINER_TIMEZONE=true # 处理时区问题
             - TZ=Asia/Shanghai # 处理时区问题
-            - TIME_ZONE=Asia/Shanghai
+            - TIME_ZONE=Asia/Shanghai 
         volumes:
             - /etc/localtime:/etc/localtime:ro # 处理时区问题
             - /feproject/gitlab/data:/var/opt/gitlab:rw #数据挂载
