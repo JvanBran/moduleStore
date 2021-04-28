@@ -25,7 +25,6 @@ module.exports = {
     //获取组件详情
     packageInfo : async (ctx, next) => {
         let { id } = ctx.request.query
-        console.log(id)
         ctx.success({
             data: ''
         })

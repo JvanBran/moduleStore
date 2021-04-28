@@ -23,7 +23,6 @@ const moduleStore = new Sequelize(process.env.DB_NAME,process.env.DB_USER,proces
 function log(e){
     //响应开始时间
     const ms = new Date()
-    console.log(e)
     logUtil.logSqlponse(e, ms);
 }
 module.exports = {

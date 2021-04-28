@@ -15,9 +15,9 @@ module.exports = {
         switch (UrlArr[0]) {
             case 'jenkins':
                 urlStr = UrlArr.slice(1,(UrlArr.length)).join('/')
-                axios.defaults.baseURL = process.env.JENKINS_HOST;
-                request.headers['user-agent'] = new UserAgent().toString()
+                axios.defaults.baseURL = 'http://'+process.env.JENKINS_HOST;
                 axios.interceptors.request.use((request) => {
+                    request.headers['user-agent'] = new UserAgent().toString()
                     request.auth = {
                         username: 'root',
                         password: process.env.JENKINS_ROOT_TOKEN
@@ -27,7 +27,7 @@ module.exports = {
                 break;
             case 'gitlab':
                 urlStr = UrlArr.slice(1,(UrlArr.length)).join('/')
-                axios.defaults.baseURL = process.env.GITLAB_HOST;
+                axios.defaults.baseURL = 'http://'+process.env.GITLAB_HOST;
                 axios.interceptors.request.use((request) => {
                     request.headers['PRIVATE-TOKEN'] = process.env.GITLAB_ROOT_TOKEN
                     request.headers['user-agent'] = new UserAgent().toString()

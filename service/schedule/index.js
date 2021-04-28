@@ -9,7 +9,7 @@ const scheduleCronstyle = ()=>{
     // });
     schedule.scheduleJob('*/5 * * * * ?',()=>{
         getstorehouse()
-        getjob()
+        //getjob()
     });
     // schedule.scheduleJob('30 * * * * *',()=>{
     //     getstorehouse()
