@@ -34,6 +34,8 @@ apps:
         RABBITMQ_VHOST: /
         GITLAB_HOST: gitlab
         GITLAB_ROOT_TOKEN: Bg8k6CwgpqbTtWD_Y3ds
+        JENKINS_HOST: http://172.18.5.199:19317/
+        JENKINS_ROOT_TOKEN: 11a89828d1c0372b02be7fc47ce2c47105
       log_date_format: "YYYY-MM-DD HH:mm Z"
       error_file: "/var/log/pm2/ModuleStoreServer/app-err.log"
       out_file: "/var/log/pm2/ModuleStoreServer/app-out.log"

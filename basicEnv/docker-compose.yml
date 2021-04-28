@@ -151,6 +151,27 @@ services:
             - /feproject/redis/data:/data:rw #数据挂载
             - /feproject/redis/logs:/data/redis/redis-log:rw # 日志挂载
             - /feproject/redis/config:/usr/local/etc/redis:rw # 配置文件
+    jenkins:
+        image: jenkins/jenkins:2.277.3-alpine
+        container_name: jenkins
+        user: root
+        restart: always
+        networks:
+            feproject-base:
+                aliases:
+                    - jenkins
+            feproject-net:
+                aliases:
+                    - jenkins
+        logging:
+            driver: "json-file"
+            options:
+                max-size: 1G
+                max-file: "2"
+        ports: 
+            - 19317:8080
+        volumes: 
+            - /feproject/jenkins/data:/var/jenkins_home:rw #数据挂载
     nodeapp:
         image: iottepa-basic-pm2:latest
         container_name: nodeapp
