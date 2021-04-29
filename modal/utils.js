@@ -35,10 +35,20 @@ class sqlClass{
             })
         })
     }
-    async findAll(){
+    async findOne(dataArr){
         const self = this;
         return new Promise((resolve, reject) => {
-            self.sqlModel.findAll().then(res => {
+            self.sqlModel.findOne(dataArr).then(res => {
+            resolve(res)
+            }).catch(err => {
+            reject(err)
+            })
+        })
+    }
+    async findAll(dataArr){
+        const self = this;
+        return new Promise((resolve, reject) => {
+            self.sqlModel.findAll(dataArr).then(res => {
               resolve(res)
             }).catch(err => {
               reject(err)

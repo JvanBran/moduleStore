@@ -5,9 +5,6 @@ axios.defaults.headers.post["Content-Type"] = "application/json;charset=UTF-8";
 axios.defaults.headers.post["X-Requested-With"] = "XMLHttpRequest";
 axios.defaults.headers.post["Cache-Control"] = "no-cache";
 axios.defaults.headers.post["pragma"] = "no-cache";
-axios.interceptors.response.use((response)=>{
-    return response
-})
 module.exports = {
     filter:(url)=>{
         const UrlArr = url.split('/')
@@ -24,6 +21,15 @@ module.exports = {
                     }
                     return request;
                 })
+                axios.interceptors.response.use((response)=>{
+                    return response
+                },(error)=>{
+                    const { response } = error;
+                    return Promise.resolve({
+                        status: response.status,
+                        data: response.data.message
+                    })
+                })
                 break;
             case 'gitlab':
                 urlStr = UrlArr.slice(1,(UrlArr.length)).join('/')
@@ -32,6 +38,15 @@ module.exports = {
                     request.headers['PRIVATE-TOKEN'] = process.env.GITLAB_ROOT_TOKEN
                     request.headers['user-agent'] = new UserAgent().toString()
                     return request;
+                })
+                axios.interceptors.response.use((response)=>{
+                    return response
+                },(error)=>{
+                    const { response } = error;
+                    return Promise.resolve({
+                        status: response.status,
+                        data: response.data.message
+                    })
                 })
                 break;
             default:

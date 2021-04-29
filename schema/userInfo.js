@@ -24,6 +24,18 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: true,
             comment: '手机号码'
         },
+        avatar_url:{
+            type: DataTypes.TEXT('tiny'),
+            field: 'avatar_url',
+            allowNull: true,
+            comment: '用户头像'
+        },
+        email:{
+            type: DataTypes.TEXT('tiny'),
+            field: 'email',
+            allowNull: true,
+            comment: '邮箱'
+        },
         question:{
             type: DataTypes.TEXT('long'),
             field: 'question',
@@ -42,6 +54,12 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: true,
             comment: '角色0-管理员,1-项目选购者,2-开发者',
             defaultValue:1
+        },
+        gitlabid:{
+            type: DataTypes.STRING(255),
+            field: 'gitlabid',
+            allowNull: true,
+            comment: 'gitlab对应用户id',
         },
         createdAt: {
             type: DataTypes.DATE,

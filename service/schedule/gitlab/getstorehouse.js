@@ -1,4 +1,4 @@
-const { get } = require('../../axios')
+const { get , post } = require('../../axios')
 module.exports = {
     getstorehouse: async()=>{
         try {
@@ -6,7 +6,18 @@ module.exports = {
         } catch (error) {
             console.log(error)
         }
-        
-        // console.log(data)
+    },
+    setCreateUser: async(userInfo)=>{
+        try {
+            return new Promise(async (resolve)=>{
+                // 通过restapi创建的用户跳过确认
+                const {data,status} = await post('gitlab/api/v4/users',Object.assign(userInfo, {skip_confirmation: true}));
+                if(status == 201){
+                    resolve(data)
+                }
+            })
+        } catch (error) {
+            console.log(error)
+        }
     }
 }
