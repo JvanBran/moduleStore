@@ -14,6 +14,9 @@ module.exports = {
                 const {data,status} = await post('gitlab/api/v4/users',Object.assign(userInfo, {skip_confirmation: true}));
                 if(status == 201){
                     resolve(data)
+                }else{
+                    const userData =  await get('gitlab/api/v4/users',{username:userInfo.name})
+                    resolve(userData[0])
                 }
             })
         } catch (error) {

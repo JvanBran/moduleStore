@@ -1,6 +1,5 @@
 const { userInfoModel } = require('../modal/userInfo');
 const { setCreateUser } = require('../service/schedule/gitlab/getstorehouse')
-const Op = require('sequelize').Op;
 const jwt = require('jsonwebtoken');
 const { redisStore } = require('../service/redis');
 module.exports = {
@@ -13,6 +12,7 @@ module.exports = {
                 email: email
             }
         })
+        
         if(UserinfoPhone.length){
             ctx.fail('用户已存在！',499,{})
         }else{
@@ -38,8 +38,9 @@ module.exports = {
         })
         if(Userinfo.length){
             const token = jwt.sign({
-                redis_id: new Date().getTime()+ Userinfo[0].dataValues.userid
+                redis_id: Userinfo[0].dataValues.userid
             }, process.env.JWT_TOKEN, { expiresIn: '24h' });
+            redisStore.set(Userinfo[0].dataValues.userid,Userinfo[0].dataValues)
             ctx.success({
                 token:token,
                 name:Userinfo[0].dataValues.name,
