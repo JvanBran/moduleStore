@@ -40,7 +40,7 @@ module.exports = {
             const token = jwt.sign({
                 redis_id: Userinfo[0].dataValues.userid
             }, process.env.JWT_TOKEN, { expiresIn: '24h' });
-            redisStore.set(Userinfo[0].dataValues.userid,Userinfo[0].dataValues)
+            redisStore.set('user:token:'+Userinfo[0].dataValues.userid,Userinfo[0].dataValues)
             ctx.success({
                 token:token,
                 name:Userinfo[0].dataValues.name,

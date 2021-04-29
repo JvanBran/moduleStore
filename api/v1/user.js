@@ -32,7 +32,7 @@ router
 })
 .get('/userInfo',async(ctx, next)=>{
     try {
-        const userInfo = await redisStore.get(ctx.jwtId)
+        const userInfo = await redisStore.get('user:token:'+ctx.jwtId)
         ctx.success(userInfo)
     } catch (error) {
         ctx.fail('系统错误',500,error.message)
