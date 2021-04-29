@@ -1,3 +1,5 @@
+const dayjs = require('dayjs');
+const moment = require('moment');
 module.exports = function (sequelize, DataTypes) {
     return sequelize.define('store_user_info', {
         userid: {
@@ -61,16 +63,19 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: true,
             comment: 'gitlab对应用户id',
         },
-        createdAt: {
+        creat_time: {
             type: DataTypes.DATE,
             field: 'creat_time',
+            defaultValue: sequelize.fn('now'),
         },
-        updatedAt: {
+        updat_time: {
             type: DataTypes.DATE,
-            field: 'updat_time'
+            field: 'updat_time',
+            defaultValue: sequelize.fn('now')
         }
     }, {
         freezeTableName: true,
+        // 是否需要增加createdAt、updatedAt、deletedAt字段
         timestamps: false,
         createdAt:'creat_time',
         updatedAt:'updat_time',

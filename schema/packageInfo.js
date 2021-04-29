@@ -1,4 +1,3 @@
-const dayjs = require('dayjs');
 module.exports = function (sequelize, DataTypes) {
     return sequelize.define('store_package_info', {
         package_id: {
@@ -68,22 +67,12 @@ module.exports = function (sequelize, DataTypes) {
         createdAt: {
             type: DataTypes.DATE,
             field: 'creat_time',
-            get(){
-                return dayjs(this.getDataValue('creat_time')).valueOf();
-            },
-            set: function(val) {
-                return dayjs(this.getDataValue('creat_time').toISOString());
-            }
+            defaultValue: sequelize.fn('now')
         },
         updatedAt: {
             type: DataTypes.DATE,
             field: 'updat_time',
-            get(){
-                return dayjs(this.getDataValue('updat_time')).valueOf();
-            },
-            set: function(val) {
-                return dayjs(this.getDataValue('updat_time')).toISOString();
-            }
+            defaultValue: sequelize.fn('now')
         }
     }, {
         // 自定义表名

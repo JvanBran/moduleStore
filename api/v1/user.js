@@ -1,20 +1,14 @@
 var router = require('koa-router')()
 const datalize = require('datalize');
 const field = datalize.field;
-const {createUser} = require('../../controllers/user')
+const { createUser , findUser } = require('../../controllers/user')
 router
 .post('/login',datalize([
-    field('name').required(),
+    field('phone').required(),
     field('password').required()
   ]),async (ctx, next)=>{
     try {
-        console.log('==',ctx.jwtId)
-        ctx.success({
-            aaa:'11',
-            bb:'12',
-            jwtId:ctx.jwtId
-        })
-        // await redisStore.set(ctx.jwtId,{asd:'111'})
+        await findUser(ctx)
     } catch (error) {
         ctx.fail('系统错误',500,error.message)
     }
