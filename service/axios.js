@@ -60,5 +60,11 @@ module.exports = {
     },
     get:(url, data, otherConfig)=>{
         return axios.get(module.exports.filter(url), { params: data, ...otherConfig });
+    },
+    del:()=>{
+        return axios.delete(module.exports.filter(url), data, otherConfig);
+    },
+    put:()=>{
+        return axios.put(module.exports.filter(url), data, otherConfig);
     }
 }

@@ -23,7 +23,6 @@ module.exports = {
             }else{
                 await userInfoModel.create(ctx.request.body)
             }
-            await userInfoModel.create(ctx.request.body)
             ctx.success('创建成功！')
         }
     },
