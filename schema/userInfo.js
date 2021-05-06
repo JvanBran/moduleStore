@@ -18,7 +18,13 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING(255),
             field: 'password',
             allowNull: false,
-            comment: '用户密码'
+            comment: '用户密码',
+            get(){
+
+            },
+            set(){
+
+            }
         },
         phone:{
             type: DataTypes.TEXT('tiny'),
@@ -62,6 +68,12 @@ module.exports = function (sequelize, DataTypes) {
             field: 'gitlabid',
             allowNull: true,
             comment: 'gitlab对应用户id',
+        },
+        gitlabshh:{
+            type: DataTypes.TEXT('long'),
+            field: 'gitlabidssh',
+            allowNull: true,
+            comment: 'gitlab对应用户ssh',
         },
         creat_time: {
             type: DataTypes.DATE,

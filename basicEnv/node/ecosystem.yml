@@ -32,7 +32,7 @@ apps:
         RABBITMQ_FRAMEMAX: 0
         RABBITMQ_HEARTBEAT: 0
         RABBITMQ_VHOST: /
-        GITLAB_HOST: gitlab/
+        GITLAB_HOST: gitlab:19312/
         GITLAB_ROOT_TOKEN: Bg8k6CwgpqbTtWD_Y3ds
         JENKINS_HOST: jenkins:8080/
         JENKINS_ROOT_TOKEN: 11a89828d1c0372b02be7fc47ce2c47105

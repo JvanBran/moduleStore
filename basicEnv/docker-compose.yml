@@ -118,7 +118,7 @@ services:
         ports: 
             - "19310:22"
             - "19311:443"
-            - "19312:80"
+            - "19312:19312"
         environment:
             - SET_CONTAINER_TIMEZONE=true # 处理时区问题
             - TZ=Asia/Shanghai # 处理时区问题
@@ -128,6 +128,28 @@ services:
             - /feproject/gitlab/data:/var/opt/gitlab:rw #数据挂载
             - /feproject/gitlab/logs:/var/logs/gitlab:rw # 日志挂载
             - /feproject/gitlab/config:/etc/gitlab:rw # 配置文件
+    gitlab-runner:
+        image: gitlab/gitlab-runner:latest
+        container_name: gitlab-runner
+        user: root
+        restart: always
+        networks:
+            feproject-base:
+                aliases:
+                    - gitlab-runner
+            feproject-net:
+                aliases:
+                    - gitlab-runner
+        logging:
+            driver: "json-file"
+            options:
+                max-size: 1G
+                max-file: "2"
+        dns: 
+            - 8.8.8.8
+        volumes:
+            - /feproject/gitlabrunner/config:/etc/gitlab-runner:rw
+            - /var/run/docker.sock:/var/run/docker.sock
     redis:
         image: redis:latest
         container_name: redis

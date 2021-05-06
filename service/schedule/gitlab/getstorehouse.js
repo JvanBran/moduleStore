@@ -21,7 +21,7 @@ module.exports = {
                     resolve(data)
                 }else{
                     const userData =  await get('gitlab/api/v4/users',{username:userInfo.name})
-                    resolve(userData[0])
+                    resolve(userData.data[0])
                 }
             })
         } catch (error) {

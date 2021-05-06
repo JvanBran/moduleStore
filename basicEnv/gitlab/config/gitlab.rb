@@ -12,6 +12,8 @@
 ##! https://docs.gitlab.com/omnibus/settings/configuration.html#configuring-the-external-url-for-gitlab
 # external_url 'GENERATED_EXTERNAL_URL'
 
+external_url 'http://172.18.5.199:19312'
+
 ## Roles for multi-instance GitLab
 ##! The default is to have no roles enabled, which results in GitLab running as an all-in-one instance.
 ##! Options:

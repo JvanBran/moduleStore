@@ -22,7 +22,15 @@ router
         field('phone').required().phone(),
         field('question').required(),
         field('answer').required(),
-        field('role').required().int().range(0, 2)
+        field('role').required().int().range(0, 2),
+        field('gitlabshh').requiredIf((value,result,ctx)=>{
+            // 如果是开发者 要求上传当前设备的ssh
+            if(ctx.request.body.role == 2){
+                return true
+            }else{
+                return false
+            }
+        })
     ]),async (ctx, next)=>{ 
     try {
         await createUser(ctx)
