@@ -1,0 +1,6 @@
+stages:
+  - well_established
+  - install_deps
+  - build
+
+image: node:latest
