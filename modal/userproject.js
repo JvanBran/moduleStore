@@ -1,4 +1,4 @@
-const db = require('../service/sequelize');
+const db = require('../plugin/sequelize');
 const { sqlClass } = require('./utils');
 const Sequelize = db.moduleStore
 const UserProject = Sequelize.import('../schema/userproject')

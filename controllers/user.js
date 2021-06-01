@@ -1,7 +1,6 @@
 const { userInfoModel } = require('../modal/userInfo');
-const { setCreateUser } = require('../service/schedule/gitlab/getstorehouse')
+const { setCreateUser } = require('../schedule/gitlab/getstorehouse')
 const jwt = require('jsonwebtoken');
-const { redisStore } = require('../service/redis');
 module.exports = {
     createUser : async (ctx, next) => {
         const { phone , email, role } = ctx.request.body;
@@ -39,7 +38,7 @@ module.exports = {
             const token = jwt.sign({
                 redis_id: Userinfo[0].dataValues.userid
             }, process.env.JWT_TOKEN, { expiresIn: '24h' });
-            redisStore.set('user:token:'+Userinfo[0].dataValues.userid,Userinfo[0].dataValues)
+            ctx.redisStore.set('user:token:'+Userinfo[0].dataValues.userid,Userinfo[0].dataValues)
             ctx.success({
                 token:token,
                 name:Userinfo[0].dataValues.name,

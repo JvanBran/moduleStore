@@ -1,4 +1,4 @@
-const { get , post, del } = require('../../axios')
+const { get , post, del } = require('../../plugin/axios')
 module.exports = {
     getstorehouse: async()=>{
         try {

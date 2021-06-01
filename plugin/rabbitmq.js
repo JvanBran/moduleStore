@@ -35,22 +35,29 @@ class RabbitMq{
             try {
                 const rabbitConn =  await self.open
                 const rabbitChannel = await rabbitConn.createChannel()
-                await rabbitChannel.assertQueue(queueName, {durable: true});
+                // await rabbitChannel.assertQueue(queueName, {durable: true});
+                await rabbitChannel.assertQueue(queueName);
                 rabbitChannel.prefetch(1);
+                // await rabbitChannel.consume(queueName,(msg)=>{
+                //     if (msg !== null) {
+                //         let data = msg.content.toString();
+                //         rabbitChannel.ack(msg);
+                //     }
+                // },{noAck: false})
                 await rabbitChannel.consume(queueName,(msg)=>{
                     if (msg !== null) {
                         let data = msg.content.toString();
                         rabbitChannel.ack(msg);
                         resolve(data)
                     }
-                },{noAck: false})
+                })
+                
             } catch (error) {
                 console.log(error)
             } 
         })
     }
 }
-const rabbitMq = new RabbitMq()
 module.exports = {
-    rabbitMq:rabbitMq
+    RabbitMq:RabbitMq
 }

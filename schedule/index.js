@@ -1,13 +1,17 @@
 const schedule = require('node-schedule');
 const {getstorehouse} = require('./gitlab/getstorehouse')
 const {getjob} = require('./jenkins/getjob')
-const scheduleCronstyle = ()=>{
+const scheduleCronstyle = (app)=>{
     //每分钟的第30秒定时执行一次 发布 */5 * * * * ? ｜｜ 30 * * * * *
     // schedule.scheduleJob('*/1 * * * * ?',()=>{
     //     getstorehouse()
         
     // });
-    schedule.scheduleJob('*/5 * * * * ?',()=>{
+    schedule.scheduleJob('*/5 * * * * ?',async ()=>{
+        console.log('22')
+        const rabbitMq = new app.context.RabbitMq()
+        const mqinfo =  await rabbitMq.receiveQueueMsg('111')
+        console.log(mqinfo)
         //getstorehouse()
         //getjob()
     });

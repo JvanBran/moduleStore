@@ -1,4 +1,4 @@
-const { get } = require('../../axios')
+const { get } = require('../../plugin/axios')
 module.exports = {
     getjob: async()=>{
         try {
