@@ -27,7 +27,7 @@ const { initPlugin } = require('./plugin');
 initPlugin(app)
 // 注册服务
 const { initService } = require('./service')
-initService()
+initService(app)
 // 定时任务订阅
 const scheduleCronstyle = require('./schedule/index')
 scheduleCronstyle(app)

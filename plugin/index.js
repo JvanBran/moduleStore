@@ -2,12 +2,13 @@
  * 注册所有插件
  */
 const { redisStore } = require('./redis');
-const { RabbitMq } = require('./rabbitmq');
+const { simplestMq } = require('./rabbitmq/simplest');
 const axios = require('./axios');
 module.exports={
     initPlugin: async(app)=>{
         app.context.redisStore = redisStore
-        app.context.RabbitMq = RabbitMq
+        //  ------------ 队列 -------------
+        app.context.simplestMq = simplestMq
         app.context.axios = axios
     }
 }

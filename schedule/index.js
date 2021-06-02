@@ -8,10 +8,9 @@ const scheduleCronstyle = (app)=>{
         
     // });
     schedule.scheduleJob('*/5 * * * * ?',async ()=>{
-        console.log('22')
-        const rabbitMq = new app.context.RabbitMq()
-        const mqinfo =  await rabbitMq.receiveQueueMsg('111')
-        console.log(mqinfo)
+        //触发多个mq
+        app.context.simplestMq.sendQueueMsg('JvanTest','1112244555')
+        app.context.simplestMq.sendQueueMsg('JvanTest1','1112244555')
         //getstorehouse()
         //getjob()
     });
