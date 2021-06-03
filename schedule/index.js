@@ -9,8 +9,9 @@ const scheduleCronstyle = (app)=>{
     // });
     schedule.scheduleJob('*/5 * * * * ?',async ()=>{
         //触发多个mq
-        app.context.simplestMq.sendQueueMsg('JvanTest','1112244555')
-        app.context.simplestMq.sendQueueMsg('JvanTest1','1112244555')
+        app.context.simplestMq.sendQueueMsg('JvanTest','12345')
+        app.context.workqueuetMq.sendQueueMsg('JvanTest1',['11111','22222','33333','44444','55555'])
+        app.context.pubsubMq.sendQueueMsg('JvanTest2','queue',['211111','222222','233333','244444','255555'])
         //getstorehouse()
         //getjob()
     });

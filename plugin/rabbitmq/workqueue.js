@@ -1,14 +1,18 @@
-// 简单队列 
+//工作队列/任务队列
 /**
- * 
- * 一个生产者对应一个消费者
- * 三个角色
- * 消息生产者 Producer
- * 消息中间件（提供消息队列） Queue
- * 消费消费者 Consumer
+ * 工作队列（又称任务队列）的主要思想是避免立即执行资源密集型任务，而不得不等待它完成。
+ * 相反，我们安排任务在以后完成。我们将任务封装 为消息并将其发送到队列。
+ * 在后台运行的工作进程将弹出任务并最终执行作业。
+ * 当您运行许多工作人员时，任务将在他们之间共享。
+ * 工作队列 方式派发消息的方式的两种方式
+ * 1. 轮询
+ * 2. 任务队列
+ *  2.1关闭自动回执(ack)
+ *  2.2设置每次接受消息
+ *  2.3数手动回执
  */
 const amqp = require('amqplib')
-class SimplestMq{
+class WorkqueuetMq{
     constructor() {
         this.open = amqp.connect({
             protocol: process.env.RABBITMQ_PROTOCOL,
@@ -27,10 +31,12 @@ class SimplestMq{
         const rabbitConn = await self.open
         const rabbitChannel = await rabbitConn.createChannel()
         await rabbitChannel.assertQueue(queueName, {durable: true});
-        await rabbitChannel.sendToQueue(queueName, Buffer.from(msg), {deliveryMode: true});
+        for (let i = 0; i < msg.length; i++) {
+            rabbitChannel.sendToQueue(queueName, Buffer.from(msg[i]))
+        }
         rabbitChannel.close()
     }
-    receiveQueueMsg = async (queueName,callback)=>{
+    receiveQueueMsg = async (queueName,time,callback)=>{
         const self = this;
         const rabbitConn =  await self.open
         const rabbitChannel = await rabbitConn.createChannel()
@@ -42,15 +48,19 @@ class SimplestMq{
             queueName,
             msg => {
                 let data = msg.content.toString();
-                callback(data)
+                setTimeout(() => {
+                    // 手动发送回执
+                    callback(data)
+                    rabbitChannel.ack(msg)
+                  }, time)
             },
             {
-                noAck: true
+                noAck: false
             }
         )
     }
 }
-const simplestMq = new SimplestMq()
+const workqueuetMq = new WorkqueuetMq()
 module.exports = {
-    simplestMq:simplestMq
+    workqueuetMq:workqueuetMq
 }
