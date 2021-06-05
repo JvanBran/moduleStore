@@ -53,6 +53,6 @@ module.exports = {
         return logText;
     },
     formatDbInfo:(log, detail)=>{
-        return '操作类型:【'+detail.type+'】' + '输出语句:【'+log+'】';
+        return '【数据库操作】操作类型:【'+detail.type+'】' + '输出语句:【'+log+'】';
     }
 }
