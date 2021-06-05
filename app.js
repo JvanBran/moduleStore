@@ -56,17 +56,6 @@ app.use(koajwt({
 }))
 app.use(require('koa-static')(__dirname + '/public'))
 app.use(datalizeVerify())
-// logger
-app.use(async (ctx, next) => {
-  const start = new Date()
-  await next()
-  const ms = new Date() - start
-  let ip = ctx.req.headers['x-forwarded-for'] || ctx.req.headers['x-real-ip'] || ctx.req.ip || ctx.req.connection.remoteAddress || ctx.req.socket.remoteAddress || ctx.req.connection.socket.remoteAddress || ''
-  if(ip) {
-    ip = ip.replace('::ffff:', '')
-  }
-  console.log(`form ${ip}  ${ctx.method} ${ctx.url} - ${ms}ms`)
-})
 // routes
 app.use(composeRouter(__dirname + '/api').routes());
 // error-handling

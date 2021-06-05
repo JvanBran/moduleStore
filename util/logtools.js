@@ -19,15 +19,15 @@ module.exports = {
             startTime = req.body.requestStartTime;
         }
         //服务器响应时间
-        logText += "response time: " + resTime + "\n";
+        logText += "response time: " + resTime + "ms\n";
         return logText;
     },
-    formatRes:(ctx, resTime)=>{
+    formatHttpRes:(ctx, resTime)=>{
         let logText = new String();
         //响应日志开始
         logText += "\n" + "*************** response log start ***************" + "\n";
         //添加请求日志
-        logText += module.exports.formatReqLog(ctx.request, resTime);
+        logText += module.exports.formatHttpInfo(ctx.request, resTime);
         //响应状态码
         logText += "response status: " + ctx.status + "\n";
         //响应内容
@@ -41,7 +41,7 @@ module.exports = {
         //错误信息开始
         logText += "\n" + "*************** error log start ***************" + "\n";
         //添加请求日志
-        logText += module.exports.formatReqLog(ctx.request, resTime);
+        logText += module.exports.formatHttpInfo(ctx.request, resTime);
         //错误名称
         logText += "err name: " + err.name + "\n";
         //错误信息

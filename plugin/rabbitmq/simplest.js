@@ -8,6 +8,7 @@
  * 消费消费者 Consumer
  */
 const amqp = require('amqplib')
+const logUtil = require('../log4j');
 class SimplestMq{
     constructor() {
         this.open = amqp.connect({
@@ -27,6 +28,7 @@ class SimplestMq{
         const rabbitConn = await self.open
         const rabbitChannel = await rabbitConn.createChannel()
         await rabbitChannel.assertQueue(queueName, {durable: true});
+        logUtil.pluginLogger.info('RabbitMq','simplest-sendQueueMsg-'+queueName,msg)
         await rabbitChannel.sendToQueue(queueName, Buffer.from(msg), {deliveryMode: true});
         rabbitChannel.close()
     }
@@ -42,6 +44,7 @@ class SimplestMq{
             queueName,
             msg => {
                 let data = msg.content.toString();
+                logUtil.pluginLogger.info('RabbitMq','simplest-receiveQueueMsg-'+queueName,msg)
                 callback(data)
             },
             {

@@ -7,16 +7,16 @@ const configClient = new NacosConfigClient({
 const client = new NacosNamingClient({
     logger: {
         info:(type,addr,prot)=>{
-          logUtil.serviceLogger.info('nacos','NacosNamingClient-init',type+''+addr+''+prot)
+          //logUtil.serviceLogger.info('nacos','NacosNamingClient-init',type+''+addr+''+prot)
         },
         debug:(type,addr,prot)=>{
-          logUtil.serviceLogger.debug('nacos','NacosNamingClient-init',type+''+addr+''+prot)
+          //logUtil.serviceLogger.debug('nacos','NacosNamingClient-init',type+''+addr+''+prot)
         },
         error:(type,addr,prot)=>{
-          logUtil.serviceLogger.error('nacos','NacosNamingClient-init',type+''+addr+''+prot)
+          //logUtil.serviceLogger.error('nacos','NacosNamingClient-init',type+''+addr+''+prot)
         },
-        warn:()=>{
-          logUtil.serviceLogger.warn('nacos','NacosNamingClient-init',type+''+addr+''+prot)
+        warn:(type,addr,prot)=>{
+          //logUtil.serviceLogger.warn('nacos','NacosNamingClient-init',type+''+addr+''+prot)
         }
       },
     serverList: process.env.NACOS_IP,

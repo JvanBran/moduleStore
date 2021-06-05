@@ -12,6 +12,7 @@
  *  2.3数手动回执
  */
 const amqp = require('amqplib')
+const logUtil = require('../log4j');
 class WorkqueuetMq{
     constructor() {
         this.open = amqp.connect({
@@ -32,6 +33,7 @@ class WorkqueuetMq{
         const rabbitChannel = await rabbitConn.createChannel()
         await rabbitChannel.assertQueue(queueName, {durable: true});
         for (let i = 0; i < msg.length; i++) {
+            logUtil.pluginLogger.info('RabbitMq','workqueuet-sendQueueMsg-'+queueName,msg[i])
             rabbitChannel.sendToQueue(queueName, Buffer.from(msg[i]))
         }
         rabbitChannel.close()
@@ -50,6 +52,7 @@ class WorkqueuetMq{
                 let data = msg.content.toString();
                 setTimeout(() => {
                     // 手动发送回执
+                    logUtil.pluginLogger.info('RabbitMq','workqueuet-sendQueueMsg-'+queueName,data)
                     callback(data)
                     rabbitChannel.ack(msg)
                   }, time)

@@ -10,11 +10,11 @@ const loggers = () => {
             await next();
             ms = new Date() - start;
             //记录响应日志
-            logUtil.apiLogger.info(ctx, ms);
+            logUtil.httpLogger.info(ctx, ms);
         } catch (error) {
             ms = new Date() - start;
             //记录异常日志
-            logUtil.apiLogger.error(ctx, error, ms);
+            logUtil.httpLogger.error(ctx, error, ms);
         }
     }
 }

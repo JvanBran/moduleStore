@@ -1,4 +1,4 @@
-const db = require('../plugin/sequelize');
+const db = require('../db/sequelize');
 const { sqlClass } = require('./utils');
 const Sequelize = db.moduleStore
 const PackageCategory = Sequelize.import('../schema/packagecategory')

@@ -17,6 +17,7 @@
  * fanout
  */
 const amqp = require('amqplib')
+const logUtil = require('../log4j');
 class PubsubMq{
     constructor() {
         this.open = amqp.connect({
@@ -39,6 +40,7 @@ class PubsubMq{
         await rabbitChannel.assertExchange(exchange_name, 'fanout', { durable: false })
         //参数1 交换机名字 参数2 指定队列 3 内容
         for (let i = 0; i < msg.length; i++) {
+            logUtil.pluginLogger.info('RabbitMq','pubsub-sendQueueMsg-'+exchange_name+'-'+queue,msg[i])
             await rabbitChannel.publish(exchange_name, queue, Buffer.from(msg[i]))
         }
         rabbitChannel.close()
@@ -56,6 +58,7 @@ class PubsubMq{
             q.queue,
             msg => {
                 let data = msg.content.toString();
+                logUtil.pluginLogger.info('RabbitMq','pubsub-receiveQueueMsg-'+exchange_name+'-'+queue,data)
                 callback(data)
                 // rabbitChannel.close()
             },
