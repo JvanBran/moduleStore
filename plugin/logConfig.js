@@ -1,74 +1,89 @@
-/*
- * @Descripttion: 
- * @version: 0.0.1
- * @Author: Jvan
- * @Date: 2020-05-14 14:26:52
- * @LastEditors: sueRimn
- * @LastEditTime: 2020-06-09 14:29:21
- */ 
 let path = require('path');
-
 //日志根目录
 let baseLogPath = path.resolve(__dirname, '../logs')
-
-//错误日志目录
-let errorPath = "/error";
+// 请求日志
+let httpPath = "/http";
+// 请求日志文件名
+let httpFileName = "http";
+// 请求日志输出完整路径
+let httpLogPath = baseLogPath + httpPath + "/" + httpFileName;
+// 插件日志
+let pluginPath = "/plugin";
 //错误日志文件名
-let errorFileName = "error";
+let pluginFileName = "plugin";
 //错误日志输出完整路径
-let errorLogPath = baseLogPath + errorPath + "/" + errorFileName;
-// let errorLogPath = path.resolve(__dirname, "../logs/error/error");
-
-
-//响应日志目录
-let responsePath = "/response";
-//响应日志文件名
-let responseFileName = "response";
-//响应日志输出完整路径
-let responseLogPath = baseLogPath + responsePath + "/" + responseFileName;
-// let responseLogPath = path.resolve(__dirname, "../logs/response/response");
-
-
-//数据库日志
-let sqlPath = "/sql";
-//响应日志文件名
-let sqlFileName = "sql";
-//响应日志输出完整路径
-let sqlLogPath = baseLogPath + sqlPath + "/" + sqlFileName;
-// let responseLogPath = path.resolve(__dirname, "../logs/sql/sql");
-
+let pluginLogPath = baseLogPath + pluginPath + "/" + pluginFileName;
+// 服务日志
+let servicePath = "/service";
+//错误日志文件名
+let serviceFileName = "service";
+//错误日志输出完整路径
+let serviceLogPath = baseLogPath + servicePath + "/" + serviceFileName;
+// 系统日志
+let systemPath = "/system";
+//错误日志文件名
+let systemFileName = "system";
+//错误日志输出完整路径
+let systemLogPath = baseLogPath + systemPath + "/" + systemFileName;
+// 数据库日志
+let dbPath = "/db";
+//错误日志文件名
+let dbFileName = "db";
+//错误日志输出完整路径
+let dbLogPath = baseLogPath + dbPath + "/" + dbFileName;
 
 module.exports = {
     "appenders":{
-        error: {
-            "category":"errorLogger",             //logger名称
+        http: {
+            "category":"httpLogger",             //logger名称
             "type": "dateFile",                   //日志类型
-            "filename": errorLogPath,             //日志输出位置
+            "filename": httpLogPath,             //日志输出位置
             "alwaysIncludePattern":true,          //是否总是有后缀名
             "pattern": "-yyyy-MM-dd-hh.log",      //后缀，每小时创建一个新的日志文件
-            "path": errorPath  
+            "path": httpPath  
         },
-        response: {
-            "category":"resLogger",
+        plugin: {
+            "category":"pluginLogger",
             "type": "dateFile",
-            "filename": responseLogPath,
+            "filename": pluginLogPath,
             "alwaysIncludePattern":true,
             "pattern": "-yyyy-MM-dd-hh.log",
-            "path": responsePath,
+            "path": pluginPath,
         },
-        sqlponse: {
-            "category":"resLogger",
+        service: {
+            "category":"serviceLogger",
             "type": "dateFile",
-            "filename": sqlLogPath,
+            "filename": serviceLogPath,
             "alwaysIncludePattern":true,
             "pattern": "-yyyy-MM-dd-hh.log",
-            "path": sqlPath,
+            "path": servicePath,
+        },
+        system: {
+            "category":"systemLogger",
+            "type": "dateFile",
+            "filename": systemLogPath,
+            "alwaysIncludePattern":true,
+            "pattern": "-yyyy-MM-dd-hh.log",
+            "path": systemPath,
+        },
+        db: {
+            "category":"dbLogger",
+            "type": "dateFile",
+            "filename": dbLogPath,
+            "alwaysIncludePattern":true,
+            "pattern": "-yyyy-MM-dd-hh.log",
+            "path": dbPath,
+        },
+        console: {
+            "type": "console"
         }
     },
     "categories" : { 
-        error: { appenders: ['error'], level: 'error' },
-        response: { appenders: ['response'], level: 'info' },
-        sqlponse: { appenders: ['sqlponse'], level: 'info' },
-        default: { appenders: ['response'], level: 'info' },
+        http: { appenders: ['http'], level: 'all' },
+        plugin: { appenders: ['plugin'], level: 'all' },
+        service: { appenders: ['service'], level: 'all' },
+        system: { appenders: ['system'], level: 'all' },
+        db: { appenders: ['db'], level: 'all' },
+        default: {appenders: ["console"], level: "all" }
     }
 }

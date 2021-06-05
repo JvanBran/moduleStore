@@ -1,5 +1,4 @@
-const logUtil = require('../util/logUtil');
-
+const logUtil = require('../plugin/log4j');
 const loggers = () => {
     return async (ctx, next) => {
         //响应开始时间
@@ -11,14 +10,11 @@ const loggers = () => {
             await next();
             ms = new Date() - start;
             //记录响应日志
-            logUtil.logResponse(ctx, ms);
-
+            logUtil.apiLogger.info(ctx, ms);
         } catch (error) {
-            console.log('error');
-            console.log(error)
             ms = new Date() - start;
             //记录异常日志
-            logUtil.logError(ctx, error, ms);
+            logUtil.apiLogger.error(ctx, error, ms);
         }
     }
 }
