@@ -1,6 +1,5 @@
 const NacosNamingClient = require('nacos').NacosNamingClient;
 const NacosConfigClient = require('nacos').NacosConfigClient;
-const logUtil = require('../plugin/log4j')
 const configClient = new NacosConfigClient({
     serverAddr: process.env.NACOS_IP
   });

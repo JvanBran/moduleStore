@@ -44,7 +44,7 @@ class SimplestMq{
             queueName,
             msg => {
                 let data = msg.content.toString();
-                logUtil.pluginLogger.info('RabbitMq','simplest-receiveQueueMsg-'+queueName,msg)
+                logUtil.pluginLogger.info('RabbitMq','simplest-receiveQueueMsg-'+queueName,data)
                 callback(data)
             },
             {
